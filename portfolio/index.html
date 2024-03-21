@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Manisha | Front-End Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            
+          </div>
+          <div class="burger-menu-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#landing-page">
+                <img
+                  src="images/profile-pic.jpg"
+                  alt="manisha"
+                  class="profile-pic nav-link"
+                />
+                <span class="caption nav-link">Manisha Mehra</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" target="_blank" class="nav-link">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" target="_blank" class="nav-link">
+                <i class="fab fa-dev"></i>
+              </a>
+              <a href="#" target="_blank" class="nav-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+           
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="landing-page" class="landing-page">
+        <div class="container">
+          <div class="main-message">
+            <h2>Manisha Mehra</h2>
+            <h3>Front-End Web Developer</h3>
+           
+            <div class="intro-btn">
+              <div class="cta">
+                <a href="#contact" class="btn">Get In Touch</a>
+              </div>
+              <div class="cta">
+                <a href="#projects" class="btn">My Projects</a>
+              </div>
+            </div>
+            <div>
+              <a href="#about" class="scroll-down">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="services" class="services">
+        <div class="container">
+          <div class="title-heading">
+            <h2>Eduactional-Qualification</h2>
+           
+          </div>
+          <div class="service-tiers">
+            <div class="tier-item">
+              <i class="fa fa-code" aria-hidden="true"></i>
+              <h2>B.C.A</h2>
+              <p>
+               I have done my graduation in Computer Application from Himachal Pradesh University Shimla.
+              </p>
+            </div>
+            <div class="tier-item">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+              <h2>M.C.A</h2>
+              <p>
+               Currently doing my masters from H.P.U Regional center Dharamshala.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section id="projects" class="projects">
+        <div class="title-heading">
+          <h2>PROJECTS</h2>
+          
+        </div>
+       
+
+        <div class="project-item">
+          <div class="project-description has-margin-right">
+            <h2>Digital Marketing</h2>
+            <p>
+              In simple terms, it refers to the process of improving your gaming website to increase its visibility in 
+              Google, Bing, and other search engines when people look for gaming products. 
+              The higher your pages' exposure in search results, the more likely you will draw attention to your company.
+            </p>
+            
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>
+          I'd love if you reached out to me. Even if it's just to say "Hey!".
+          Don't hesitate! Drop me a line and I’ll get back to you ASAP!
+        </p>
+        <p>
+          <i
+            >For gig and advertising opportunities, begin your subject with
+            <strong>"Gig"</strong></i
+          >
+        </p>
+        <div class="container">
+          <p>
+            <a href="mailto:chaoocharles@gmail.com"
+              ><i class="fas fa-envelope-open"></i> manishamehra329@gmail.com</a
+            >
+          </p>
+         
+          <p>
+            <a href="#" target="_blank"><i class="fab fa-dev"> instagram</i></a>
+          </p>
+          <p>
+            <a href="#" target="_blank"
+              ><i class="fab fa-twitter">Telegram</i></a
+            >
+          </p>
+        </div>
+        <hr />
+      </section>
+      <footer>
+        <div class="footer-nav">
+          <a href="#landing-page" class="footer-nav-link">Home</a>
+          
+          <a href="#services" class="footer-nav-link">Education</a>
+          <a href="projects" class="footer-nav-link">Projects</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </div>
+        <div class="footer-coded-by">
+         
+          <p>Built with pure HTML, CSS and JavaScript</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-dev"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </footer>
+    </main>
+    </body>
+    <script>
+        // Function expression to select elements `
+
+const selectElement = (s) => document.querySelector(s);
+const navLinks = document.querySelectorAll(".nav-link");
+
+selectElement(".burger-menu-icon").addEventListener("click", () => {
+    selectElement(".nav-list").classList.toggle("active");
+    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+    navLinks.forEach((link, index) => {
+        if (link.style.animation){
+            link.style.animation = ""
+        }else{
+            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+            console.log(index/7 + 0.5)
+        }
+    })
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        selectElement(".nav-list").classList.toggle("active");
+        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+        navLinks.forEach((link, index) => {
+            if (link.style.animation){
+                link.style.animation = ""
+            }else{
+                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+                console.log(index/7 + 0.5)
+            }
+        })
+    })
+})  
+    </script>
+</html>
